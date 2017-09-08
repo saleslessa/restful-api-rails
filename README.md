@@ -1,24 +1,16 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Basic RestFul API using Ruby On Rails for study purposes. This example used following gems and techs:
 
-Things you may want to cover:
+- MongoDB database using MongoId adapter
+- RSpec framework with FactoryGirl and Faker for Test Purposes
 
-* Ruby version
+#Configuration environment
 
-* System dependencies
+* Ruby version: 2.3.3
 
-* Configuration
+* Rails version: 5.1.3
 
-* Database creation
+* MongoId version: 6.1.1
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* MongoDB database: mlab sandbox (mlab.com)
