@@ -4,13 +4,15 @@ class TodosController < ApplicationController
     #GET /todos
     def index
         @todos = Todo.all
+        head :error
         json_response(@todos)
     end
 
     #POST /todos
     def create
         @todo = Todo.create!(todo_params)
-        json_response(@todo, :created)
+        #json_response(@todo, :created)
+        head :no_content
     end
 
     #GET /todos/{id}

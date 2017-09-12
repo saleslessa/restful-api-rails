@@ -9,6 +9,6 @@ class Todo < ApplicationRecord
     field :updated_at, type: Date
     field :items, type: Array[Item]
 
-    validates_presence_of :title, :created_by
+    validates_presence_of :title
 
 end
