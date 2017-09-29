@@ -1,1 +1,1 @@
-web: bundle exec rails server -p 80
+web: bundle exec rails https://whispering-spire-64185.herokuapp.com -p 443
