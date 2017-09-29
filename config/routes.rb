@@ -5,4 +5,5 @@ Rails.application.routes.draw do
     resources :items
   end
 
+  root to: "todos#index"
 end
