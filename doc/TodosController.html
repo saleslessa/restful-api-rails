@@ -256,13 +256,6 @@
   
   
   
-  
-  
-  
-  
-  
-  
-  
   <h3 class="inherited">Methods included from <span class='object_link'><a href="Response.html" title="Response (module)">Response</a></span></h3>
   <p class="inherited"><span class='object_link'><a href="Response.html#json_response-instance_method" title="Response#json_response (method)">#json_response</a></span></p>
 
@@ -298,14 +291,14 @@
       <pre class="lines">
 
 
+11
 12
 13
 14
-15
-16</pre>
+15</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'app/controllers/todos_controller.rb', line 12</span>
+      <pre class="code"><span class="info file"># File 'app/controllers/todos_controller.rb', line 11</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_create'>create</span>
     <span class='ivar'>@todo</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="Todo.html" title="Todo (class)">Todo</a></span></span><span class='period'>.</span><span class='id identifier rubyid_create!'>create!</span><span class='lparen'>(</span><span class='id identifier rubyid_todo_params'>todo_params</span><span class='rparen'>)</span>
@@ -343,13 +336,13 @@
       <pre class="lines">
 
 
+29
 30
 31
-32
-33</pre>
+32</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'app/controllers/todos_controller.rb', line 30</span>
+      <pre class="code"><span class="info file"># File 'app/controllers/todos_controller.rb', line 29</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_destroy'>destroy</span>
     <span class='ivar'>@todo</span><span class='period'>.</span><span class='id identifier rubyid_destroy'>destroy</span>
@@ -389,15 +382,13 @@
 5
 6
 7
-8
-9</pre>
+8</pre>
     </td>
     <td>
       <pre class="code"><span class="info file"># File 'app/controllers/todos_controller.rb', line 5</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_index'>index</span>
     <span class='ivar'>@todos</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="Todo.html" title="Todo (class)">Todo</a></span></span><span class='period'>.</span><span class='id identifier rubyid_all'>all</span>
-    <span class='id identifier rubyid_head'>head</span> <span class='symbol'>:error</span>
     <span class='id identifier rubyid_json_response'>json_response</span><span class='lparen'>(</span><span class='ivar'>@todos</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
     </td>
@@ -431,12 +422,12 @@
       <pre class="lines">
 
 
+18
 19
-20
-21</pre>
+20</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'app/controllers/todos_controller.rb', line 19</span>
+      <pre class="code"><span class="info file"># File 'app/controllers/todos_controller.rb', line 18</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_show'>show</span>
     <span class='id identifier rubyid_json_response'>json_response</span><span class='lparen'>(</span><span class='ivar'>@todo</span><span class='rparen'>)</span>
@@ -472,13 +463,13 @@
       <pre class="lines">
 
 
+23
 24
 25
-26
-27</pre>
+26</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'app/controllers/todos_controller.rb', line 24</span>
+      <pre class="code"><span class="info file"># File 'app/controllers/todos_controller.rb', line 23</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_update'>update</span>
     <span class='ivar'>@todo</span><span class='period'>.</span><span class='id identifier rubyid_update'>update</span><span class='lparen'>(</span><span class='id identifier rubyid_todo_params'>todo_params</span><span class='rparen'>)</span>
@@ -494,7 +485,7 @@
 </div>
 
       <div id="footer">
-  Generated on Wed Sep 27 21:32:17 2017 by
+  Generated on Thu Sep 28 21:05:09 2017 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.9 (ruby-2.3.3).
 </div>

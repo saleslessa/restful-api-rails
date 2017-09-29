@@ -1,4 +1,4 @@
-class Todo < ApplicationRecord
+class Todo 
     include Mongoid::Document
     embeds_many :items
     accepts_nested_attributes_for :items
